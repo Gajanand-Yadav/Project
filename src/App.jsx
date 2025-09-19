@@ -9,7 +9,7 @@ import WeatherAlerts from './components/WeatherAlerts.jsx';
 
 function App() {
   return (
-    <BrowserRouter>
+  
       <Routes>
         {/* Route for the homepage */}
         <Route path="/" element={<KrishiSahayak />} />
@@ -23,7 +23,7 @@ function App() {
 
 
       </Routes>
-    </BrowserRouter>
+
   );
 }
 

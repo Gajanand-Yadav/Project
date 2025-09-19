@@ -120,7 +120,6 @@ const KrishiSahayak = () => {
         }
     }, [isLoading]); 
 
-    // ✅ updated services with route instead of inline Navigate
     const services = [
         { icon: 'cpu', title: 'AI Crop Prediction', description: 'Get accurate crop yield predictions using our advanced AI models tailored to your farm\'s conditions.', path: '/AiCropPredict' },
         { icon: 'shield', title: 'Pest & Disease Diagnosis', description: 'Upload photos of affected crops and get instant diagnosis with treatment recommendations.', path: '/AiPestdisease' },
@@ -135,10 +134,6 @@ const KrishiSahayak = () => {
 
     return (
         <div className="krishi Sahayak">
-            <NavBar />
-
-
-            {/* Hero Section */}
             <div className="hero">
                 <div className="container hero-content" data-aos="fade-up">
                     <h1 className="hero-title">AI Powered Insights for Modern Agriculture</h1>
@@ -150,7 +145,6 @@ const KrishiSahayak = () => {
                 </div>
             </div>
 
-            {/* Services Section */}
             <div className="services-section">
                 <h2 className="section-title" data-aos="fade-up">Our Services</h2>
                 <div className="services-grid">
@@ -160,7 +154,7 @@ const KrishiSahayak = () => {
                             className="card service-card" 
                             data-aos="fade-up" 
                             data-aos-delay={100 + index * 50}
-                            onClick={() => navigate(service.path)} // ✅ makes whole card clickable
+                            onClick={() => navigate(service.path)} 
                             style={{cursor: "pointer"}}
                         >
                             <div className="card-icon-wrapper">

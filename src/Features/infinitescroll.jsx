@@ -1,11 +1,20 @@
 import React, { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
+import feather from "feather-icons";
+const someObject = {
+  logoIcon: "🔥",
+  tag: "New",
+  title: "React Error",
+  description: "Fix it!",
+};
+
 const SchemeSection =() => {
-    const [schemes,setSchemes] = useState([]);
+    const [Schemes,setSchemes] = useState([]);
     const [visibleCount,setVisibleCount] = useState(5);
     const [loading,setLoading] = useState(false);
     const allSchemes = [
   {
-    logoIcon: "award",
+    logoIcon: "🏆",
     tag: "PM-KISAN",
     title: "Income Support Scheme",
     description:
@@ -115,14 +124,14 @@ const SchemeSection =() => {
 
   return (
     <div className="schemes-section p-4">
-      <h2 className="text-xl font-bold mb-4">Government Schemes</h2>
+      
       <ul>
-        {allSchemes.slice(0, visibleCount).map((scheme, index) => (
+        {allSchemes.slice(0, visibleCount).map((Schemes, index) => (
           <li
             key={index}
             className="p-2 mb-2 border rounded shadow-sm bg-gray-100"
           >
-            {scheme}
+            {Schemes}
           </li>
         ))}
       </ul>

@@ -13,6 +13,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   box-shadow: 0 4px 12px var(--shadow-color);
   text-decoration: none;
